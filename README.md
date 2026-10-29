@@ -1,12 +1,12 @@
 
-# Wordly — Dictionary SPA
+Wordly — Dictionary SPA
 
-## Description
+ Description
 Wordly is a single-page dictionary application built with
 HTML, CSS, and JavaScript. It retrieves word definitions from
 the Free Dictionary API without reloading the page.
 
-## Features
+Features
 - Search for English words
 - View definitions and parts of speech
 - Display example sentences and synonyms
@@ -17,7 +17,7 @@ the Free Dictionary API without reloading the page.
 - Handle missing words and API errors
 - Responsive design for desktop and mobile
 
-## Technologies
+ Technologies
 - HTML5
 - CSS3
 - JavaScript (ES6+)
@@ -25,10 +25,7 @@ the Free Dictionary API without reloading the page.
 - Free Dictionary API
 - Browser localStorage
 
-## API
-https://dictionaryapi.dev/
-
-## How to run
+ How to run
 1. Clone or download the repository.
 2. Open the project folder in VS Code.
 3. Open index.html using Live Server.
@@ -36,12 +33,10 @@ https://dictionaryapi.dev/
 
 An internet connection is required for dictionary lookups.
 
-## Project files
+ Project files
 - index.html — page structure
 - style.css — layout and styling
 - script.js — API requests and application logic
 
-## Author
+ Author
 Shalyn Wanjiru
-catch {
-  // The app defaults to light mode if storage is unavailable.
