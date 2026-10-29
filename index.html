@@ -1,0 +1,85 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly | Discover Every Word</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Wordly</h1>
+        <p>Discover Every Word</p>
+        <a class="brand" href="#" aria-label="Wordly Home">
+            <span class="brand-icon">W</span>
+            wordly<span class="brand-dot">.</span>
+        </a>
+
+        <button id="theme-toggle" class="icon-button" 
+        type="button" aria-label="switch theme">
+        🌙Dark Mode
+        </button>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">YOUR WORD, YOUR WORLD</p>
+            <h1>Discover a new word.</h1>
+            <p class="subtitle">
+                Find meanings, hear pronunciations, and grow your vocabulary.
+            </p>
+
+            <form id="search-form" class="search-form">
+                <label class="sr-only" for="word-input">Enter a word</label>
+                <input
+                    id="word-input"
+                    type="text"
+                    placeholder="Search for a word..."
+                    autocomplete="off"
+                    required
+                >
+                <button id="search-button" type="submit">Search →</button>
+            </form>
+
+            <p id="status-message" class="status" role="status"
+                aria-live="polite">Enter a word to get started.</p>
+        </section>
+
+    <section class="content-grid">
+      <section class="results-section" aria-label="Dictionary results">
+        <div id="results" aria-live="polite">
+          <div class="empty-state">
+            <span class="empty-icon">📖</span>
+            <h2>Your next word starts here</h2>
+            <p>Search for a word to see its definition.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="favorites-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR COLLECTION</p>
+            <h2>Saved words <span id="favorite-count">0</span></h2>
+          </div>
+          <span aria-hidden="true">♡</span>
+        </div>
+        <p class="favorites-description">
+          Keep the words you want to remember.
+        </p>
+        <ul id="favorites-list" class="favorites-list"></ul>
+      </aside>
+    </section>
+    </main>
+
+ <footer>
+    <p>Wordly · Every word opens a new world.</p>
+    <p>
+       Dictionary data from
+     <a href="https://dictionaryapi.dev/" target="_blank"
+        rel="noopener noreferrer">Free Dictionary API</a>.
+    </p>
+ </footer>
+  
+</body>
+</html>
